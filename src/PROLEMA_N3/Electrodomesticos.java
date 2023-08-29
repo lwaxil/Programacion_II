@@ -1,5 +1,7 @@
 package PROLEMA_N3;
 
+import java.util.Arrays;
+
 public class Electrodomesticos {
     protected double precioBase;
     protected double peso;
@@ -29,13 +31,21 @@ public class Electrodomesticos {
         }
     }
     private void comprobarColor(String colores){
-        for (int i=0; i<Arraycolores.length; i++){
-            if (Arraycolores[i].equals(colores)){
-                this.color=colores;
+        for (String arraycolore : Arraycolores) {
+            if (arraycolore.equals(colores)) {
+                this.color = colores;
                 return;
-            }else{
-                this.color="blanco";
+            } else {
+                this.color = "blanco";
             }
         }
+    }
+
+    @Override
+    public String toString() {
+        return"El precio base es : " + precioBase +
+                ", el peso: " + peso +
+                ", el consumo: " + consumo +
+                ", y el color: '" + color + '\'';
     }
 }
