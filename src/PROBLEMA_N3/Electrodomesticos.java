@@ -1,6 +1,4 @@
-package PROLEMA_N3;
-
-import java.util.Arrays;
+package PROBLEMA_N3;
 
 public class Electrodomesticos {
     protected double precioBase;
@@ -95,4 +93,5 @@ public class Electrodomesticos {
                 ", el consumo: " + consumo +
                 ", y el color: '" + color + '\'';
     }
+
 }

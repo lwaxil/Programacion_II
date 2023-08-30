@@ -1,15 +1,16 @@
-package PROLEMA_N3;
+package PROBLEMA_N3;
 
 public class Lavarropas extends Electrodomesticos{
     private int carga;
-    private static final int CARGA_DEFECTO = 5;
+    private final int CARGA_DEFECTO = 5;
 
-    public Lavarropas(int carga) {
+    public Lavarropas() {
         this.carga = CARGA_DEFECTO;
     }
 
     public Lavarropas(double precioBase, double peso) {
         super(precioBase, peso);
+        this.carga = CARGA_DEFECTO;
     }
 
     public Lavarropas(double precioBase, double peso, char consumoEnergetico, String color, int carga) {
@@ -28,5 +29,13 @@ public class Lavarropas extends Electrodomesticos{
             precioFinal += 50;
         }
         return  precioFinal;
+    }
+
+    @Override
+    public String toString() {
+        return "Lavarropas{" +
+                "carga=" + carga +
+                ", CARGA_DEFECTO=" + CARGA_DEFECTO +
+                '}';
     }
 }
