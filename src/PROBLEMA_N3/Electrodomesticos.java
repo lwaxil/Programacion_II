@@ -40,25 +40,13 @@ public class Electrodomesticos {
     }
     public double precioFinal(){
         double precioFinal = precioBase;
-        switch (consumo){
-            case 'A':
-                precioFinal += 100;
-                break;
-            case 'B':
-                precioFinal += 80;
-                break;
-            case 'C':
-                precioFinal += 60;
-                break;
-            case 'D':
-                precioFinal += 50;
-                break;
-            case 'E':
-                precioFinal += 30;
-                break;
-            case 'F':
-                precioFinal += 10;
-                break;
+        switch (consumo) {
+            case 'A' -> precioFinal += 100;
+            case 'B' -> precioFinal += 80;
+            case 'C' -> precioFinal += 60;
+            case 'D' -> precioFinal += 50;
+            case 'E' -> precioFinal += 30;
+            case 'F' -> precioFinal += 10;
         }
 
         if (peso<20){
