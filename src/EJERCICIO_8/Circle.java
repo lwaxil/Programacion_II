@@ -1,4 +1,4 @@
-package EJERCICIO8;
+package EJERCICIO_8;
 
 public class Circle {
     protected double radius = 1.0;
