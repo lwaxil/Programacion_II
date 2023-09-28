@@ -34,5 +34,5 @@ public class Main {
         halcon.comer("ratones");
         gato.comer("lasagna");
     }
-
 }
+
