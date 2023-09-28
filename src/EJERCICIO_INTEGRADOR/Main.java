@@ -32,7 +32,7 @@ public class Main {
         //sobrecarga para comer
         delfin.comer("pescado");
         halcon.comer("ratones");
-        gato.comer("lasagna");
+        gato.comer("h");
     }
-
 }
+
